@@ -1,0 +1,9 @@
+<h2>Edit Post</h2>
+
+<%= form_tag posts_path do %>
+  <label name="title">Title: </label>
+  <%= text_field_tag :title %>
+  <%= text_field_tag :description %>
+
+  <%= submit_tag "Submit Post" %>
+<% end %>
